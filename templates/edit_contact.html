@@ -1,0 +1,54 @@
+{% extends 'layout.html' %}
+{% block body %}
+<div class="col-md-8 offset-md-2">
+    <div class="card card-body">
+        <h1>Actualizar Datos</h1>
+        <form action="/update/{{contact.0}}" method="POST">
+            <div class="form-group">
+                <input type="text" name="fullname" class="form-control" placeholder="fullname" value="{{contact.1}}">
+            </div>
+            <div class="form-group">
+                <input type="text" name="phone" class="form-control" placeholder="phone" value="{{contact.2}}">
+            </div>
+            <div class="form-group">
+                <input type="text" name="email" class="form-control" placeholder="email" value="{{contact.3}}">
+            </div>
+            
+            <div class="form-group">
+                <select class="form-select" name="prenda" id="inputGroupSelect01" value="{{contact.4}}">
+                    <option value="Chaqueta de Cuero">Chaqueta de Cuero</option>
+                    <option value="Buso de algodon">Buso de algodon</option>
+                    <option value="Body Rojo">Body Rojo </option>
+                    <option value="Buso Jordan">Buso rojo Jordan </option>
+                    <option value="Camisa casual ">Camisa casual de campo </option>
+                    <option value="Camisa casual ">Camisa casual negra </option>
+                    <option value="chaqueta+falda">Conjunto chaqueta+falda </option>
+                    <option value="Conjunto Casual">Conjunto Casual Camisa + pantalon </option>
+                    <option value="Conjunto Black">Conjunto Black </option>
+                    <option value="Conjunto Otoño">Conjunto Otoño </option>
+                    <option value="Conjuto Primera">Conjuto Primera </option>
+                    <option value="Conjunto Univer.">Conjunto Universitario </option>
+                    <option value="Conjunto Gabardina">Conjunto Gabardina </option>
+                    <option value="Pantalon Deportivo">Pantalon Deportivo </option>
+                    <option value="Vestido Turqueza">Vestido Bershka Turqueza </option>
+                    <option value="Vestido H&M NEGRO">Vestido H&M NEGRO </option>
+                    <option value="Vestido Zara Rojo">Vestido Zara Rojo </option>
+                    <option value="Conjunto Jeans">Conjunto Jeans </option>
+                </select>
+            </div>
+            <div class="form-group">
+                <input type="number" name="cantidad" class="form-control" placeholder="cantidad" value="{{contact.5}}">
+            </div>
+        
+            <button type="submit" class="btn btn-success btn-block">
+                Update
+            </button>
+            </form>
+    </div>
+
+</div>
+</div>
+
+
+
+{% endblock %}

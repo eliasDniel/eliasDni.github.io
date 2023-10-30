@@ -1,0 +1,12 @@
+html, body {
+   height: 100%;
+   margin: 0;
+   padding: 0;
+ }
+ 
+ body {
+   background-image: url('https://mangoecuador.vtexassets.com/assets/vtex.file-manager-graphql/images/2f7a8a1a-e7bb-4315-8c8a-88d63576128c___48a85f8c47bb7b8a36f8c35b054833e5.jpg');
+   background-size: cover;
+   background-repeat: no-repeat;
+ }
+ 
