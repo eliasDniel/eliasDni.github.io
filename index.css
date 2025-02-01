@@ -139,7 +139,8 @@ header a:hover{
     background-image: linear-gradient(
         0deg,
         rgba(0,0,0,0.5),
-        rgba(0,0,0,0.5)
+        rgba(0,0,0,0.5),
+
     )
     ,url("media/im4-k.jpg");
 
@@ -321,7 +322,7 @@ footer .container{
     }
 
     #caracteristicas{
-        background-image: url("media/background-2.jpeg");
+        background-image: url("media/im5-k.jpg");
         background-repeat: no-repeat;
         background-size: 500px 400px;
         background-position: calc(100vw - 500px) 120px;
